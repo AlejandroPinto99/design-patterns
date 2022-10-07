@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import TestingProxy from "./patterns/ProxyPattern/proxy";
+import TestingProvider from "./patterns/ProviderPattern/provider";
+import TestingThemeProvider from "./patterns/ProviderPattern/themeProvider";
+import TestingPrototype from './patterns/PrototypePattern/prototype'
+import { GetPokeData, RenderPokemonWithHook } from './patterns/PresentationalPattern/presentational'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <TestingProxy /> */}
+
+      <GetPokeData />
+      <RenderPokemonWithHook />
     </div>
   );
 }
